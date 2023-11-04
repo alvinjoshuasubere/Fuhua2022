@@ -1776,13 +1776,14 @@ li {
 	width: 414px;
 	height: 703px;
 	margin-bottom: 70px;
+	z-index: 1;
 }
 
 .whitecloudNDC {
 	margin-top: -150px;
 	position: relative;
 	overflow: hidden;
-	z-index: 1;
+	z-index: -1;
 }
 
 /* National Day Celebration end Page Css  */
