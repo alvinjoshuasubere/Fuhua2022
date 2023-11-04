@@ -1,0 +1,2388 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: Intro;
+	src: url('../Fonts/Intro/Intro.otf');
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url('../Fonts/Montserrat/Montserrat-Bold.otf');
+}
+
+@font-face {
+	font-family: Century-Gothic;
+	src: url('/Fonts/Century-Gothic/CenturyGothic.ttf');
+}
+
+/* CSS Document */
+
+
+body {
+	width: 414px;
+	max-width: 414px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	background: rgb(255, 174, 52);
+	background: linear-gradient(0deg, rgba(255, 174, 52, 1) 0%, rgba(255, 255, 255, 1) 100%);
+	background-repeat: no-repeat;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.parentContainer {
+	width: 414px;
+}
+
+button {
+	cursor: pointer;
+}
+
+div {
+	text-align: center;
+}
+
+div.scroll_slidehow {
+	overflow: scroll;
+	overflow-x: visible;
+	overflow-y: hidden;
+	white-space: nowrap;
+	scrollbar-base-color: rgba(0, 0, 0, .5);
+}
+
+::-webkit-scrollbar {
+	-webkit-appearance: none;
+	width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, .5);
+	-webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+.dropbtn {
+	background-color: #462F20;
+	width: 356px;
+	height: 73px;
+	border-radius: 0px 0px 0px 0px;
+	font-size: 20px;
+	border: none;
+	cursor: pointer;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-weight: bold;
+	text-align: left;
+	padding-left: 30px;
+	letter-spacing: -0.5pt;
+	color: white;
+	margin-left: 56px;
+}
+
+
+.dropbtn:hover,
+.dropbtn:focus {
+	background-color: darkorange;
+}
+
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+
+}
+
+.dropdown-content {
+	display: none;
+	background-color: white;
+	min-width: 160px;
+	overflow: auto;
+	z-index: 1;
+	border-radius: 0px 0px 0px 0px;
+	margin-left: 70px;
+}
+
+.dropdown-content a {
+	color: #462F20;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-weight: bold;
+	text-align: left;
+	letter-spacing: -0.5pt;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown a:hover {
+	background-color: orange;
+}
+
+.show {
+	display: block;
+}
+
+.cloud {
+	/*  fixed top bar header; */
+	align-items: center;
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	width: 414px;
+	height: auto;
+	left: 0;
+	right: 0;
+	top: 86px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: -1;
+}
+
+.header {
+	display: flex;
+	/*  fixed top bar header; */
+	align-items: center;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: 3;
+	width: 414px;
+	/* background-image: url('img/Fuhua/Topbar.png'); */
+	background-image: url('../img/Fuhua/Topbar.png');
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-family: Intro;
+	text-align: center;
+	letter-spacing: -0.5pt;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	color: #412003;
+	z-index: 0;
+}
+
+p {
+	font-family: Century-Gothic;
+}
+
+
+.empty_col {
+	width: 54px;
+}
+
+
+.menubar {
+	background-color: #462F20;
+	width: 360px;
+	border-radius: 0px 0px 0px 0px;
+	font-size: 14px;
+	transition: background-color 0.5s;
+	font-family: 'Roboto', sans-serif;
+	padding: 10px 0px 10px;
+}
+
+
+.menubar:hover {
+	background-color: darkorange;
+}
+
+.menubar-first {
+	background-color: #462F20;
+	width: 360px;
+	border-radius: 30px 0px 0px 0px;
+	font-size: 14px;
+	transition: background-color 0.5s;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	padding: 10px 0px 10px;
+}
+
+.menubar-first:hover {
+	background-color: darkorange;
+}
+
+.menubar-last {
+	background-color: #462F20;
+	width: 360px;
+	border-radius: 0px 0px 0px 30px;
+	font-size: 14px;
+	transition: background-color 0.5s;
+	font-family: 'Roboto', sans-serif;
+	padding: 10px 0px 10px;
+}
+
+.menubar-last:hover {
+	background-color: darkorange;
+}
+
+.menubar2022 {
+	background-color: #B98236;
+	width: 360px;
+	border-radius: 0px 0px 0px 0px;
+	font-size: 14px;
+	transition: background-color 0.5s;
+	font-family: Montserrat !important;
+	padding: 10px 0px 10px;
+}
+
+
+.menubar2022:hover {
+	background-color: #462F20;
+}
+
+.menubar2022-first {
+	background-color: #B98236;
+	width: 360px;
+	border-radius: 30px 0px 0px 0px;
+	font-size: 14px;
+	transition: background-color 0.5s;
+	font-family: Montserrat;
+	padding: 10px 0px 10px;
+}
+
+.menubar2022-first:hover {
+	background-color: #462F20;
+}
+
+.menubar2022-last {
+	background-color: #B98236;
+	width: 360px;
+	border-radius: 0px 0px 0px 30px;
+	font-size: 14px;
+	transition: background-color 0.5s;
+	font-family: Montserrat;
+	padding: 10px 0px 10px;
+}
+
+.menubar2022-last:hover {
+	background-color: #462F20;
+}
+
+.title2022 {
+	font-family: Montserrat;
+	text-align: left;
+	/* letter-spacing: -0.5pt; */
+	color: white;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+
+h2 {
+	font-family: "roboto";
+	text-align: left;
+	/* letter-spacing: -0.5pt; */
+	color: white;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+
+p {
+	font-family: Century Gothic, CenturyGothic, arial, sans-serif;
+	text-align: center;
+	color: #412003;
+	padding: 0px 35px;
+	font-size: 19px;
+	line-height: 25px;
+}
+
+.caption {
+	font-size: 11pt;
+	line-height: 12pt;
+	font-style: italic;
+}
+
+.button_home {
+	flex: 1;
+	width: 65px;
+	height: 85px;
+}
+
+.page-title {
+	width: 244px;
+	background-color: none;
+	color: white;
+	position: relative;
+	font-family: Arial Black, Tahoma, Verdana, Segoe, sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+	text-align: center;
+	display: inline-block;
+	/* border: 1px solid white; */
+}
+
+button {
+	width: 38px;
+	height: 38px;
+	background-color: #ffffff00;
+	border-radius: 20px;
+	border: 3px solid white;
+}
+
+div.ex1 {
+	height: 590px;
+	width: 380px;
+	overflow-y: scroll;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ex2 {
+	height: auto;
+	width: 380px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+iframe {
+	border: 0px solid white;
+}
+
+
+.topimage {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: -1;
+	width: auto;
+	height: 115px;
+}
+
+.bottom_image {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 0;
+}
+
+
+.timeline_head {
+	height: 400px;
+}
+
+* {
+	box-sizing: border-box
+}
+
+.mySlides1,
+.mySlides2,
+.mySlides3 {
+	display: none
+}
+
+img {
+	vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 50%;
+	user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	background-color: saddlebrown;
+	opacity: 0.6;
+	border-radius: 3px 0 0 3px;
+}
+
+
+/* Position the "next button" to the left */
+.prev {
+	left: 0;
+	background-color: saddlebrown;
+	opacity: 0.6;
+	border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a grey background color */
+.prev:hover,
+.next:hover {
+	background-color: #f1f1f1;
+	color: black;
+}
+
+/* Fuhua 2022 Design Slider */
+.prev2,
+.next2 {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	padding: 5px;
+	margin-top: -32px;
+	color: #462F20;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 50%;
+	user-select: none;
+}
+
+.next2 {
+	right: 0;
+	margin-right: 30px;
+	background-color: #fff;
+	height: 40px;
+	width: 40px;
+}
+
+.prev2 {
+	left: 0;
+	margin-left: 30px;
+	background-color: #fff;
+	height: 40px;
+	width: 40px;
+}
+
+.prev2:hover,
+.next2:hover {
+	background-color: #462F20;
+	color: white;
+}
+
+/*End  Fuhua 2022 Design Slider */
+
+.mobile_view {
+	display: none;
+	z-index: -1;
+	position: fixed;
+}
+
+.fuhuafooter {
+	height: 572px;
+	max-width: 414px;
+	overflow: hidden;
+	position: relative;
+	z-index: -8;
+	text-align: center;
+	margin-top: -274px;
+	/* style="padding-top: 30px;" */
+}
+
+.fuhua_bottom_image {
+	position: absolute;
+	left: -146px;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: -1;
+	margin-top: 4px;
+}
+
+/* Mobile View */
+@media (max-width: 414px) {
+	html {
+		background: linear-gradient(0deg, rgba(255, 174, 52, 1) 0%, rgba(255, 255, 255, 1) 100%);
+		background-repeat: no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+}
+
+/* Pricipal foreward page css start here */
+.principal_forward_container {
+	height: 178.84px;
+	background-size: 442.28px 178.84px;
+	background-image: url('../img/Pforeward/Group\ 3144.png');
+	margin-top: -123px;
+	margin-left: 14px;
+}
+
+.principal_forward_container p {
+	position: absolute;
+	margin-left: 95px;
+	margin-top: 110px;
+	font-family: Intro;
+	font-size: 24px;
+	line-height: 20px;
+}
+
+.principal_forward_container h1 {
+	font-size: 25px;
+	line-height: 20px;
+	margin: 109px -18px auto auto;
+}
+
+.white-cloud {
+	align-items: center;
+	display: block;
+	overflow: hidden;
+	width: 414px;
+	height: auto;
+	left: 0;
+	right: 0;
+	top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: -1;
+	position: relative;
+}
+
+.white-cloud-second {
+	align-items: center;
+	display: block;
+	overflow: hidden;
+	width: 414px;
+	height: auto;
+	left: 0;
+	right: 0;
+	top: 1507px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: -1;
+	position: absolute;
+}
+
+.white-cloud-third {
+	align-items: center;
+	display: block;
+	overflow: hidden;
+	width: 414px;
+	height: auto;
+	left: 0;
+	right: 0;
+	top: 2275px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: -1;
+	position: absolute;
+}
+
+.principal_paragraph_container {
+	padding: 0 46px;
+}
+
+.principal_fordward_picture_holder {
+	height: 444.87px;
+	background-image: url('../img/Pforeward/Mr.GanesanRaman.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 20px 0;
+}
+
+.footer {
+	background-image: url("../img/Pforeward/footerbg.png");
+	height: 170px;
+	background-position: center;
+}
+
+/* Principal foreward page css end here */
+
+/* Start it right page css start here */
+.Startitright_pagetitle_container .Startitright_pagetitle {
+	font-family: Intro;
+	font-size: 24px;
+	line-height: 21px;
+	padding: 20px 60px 13px;
+}
+
+.startitright_contents {
+	padding: 20px 42px 20px;
+}
+
+.Startitright_container .Startitright_second_pagetitle {
+	font-family: Intro;
+	font-size: 24px;
+	line-height: 21px;
+}
+
+.whitecloud-startitright {
+	align-items: center;
+	display: block;
+	overflow: hidden;
+	width: 414px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.Startitright_third_pagetitle {
+	font-family: Intro;
+	font-size: 24px;
+	line-height: 21px;
+	margin-top: -183px;
+}
+
+.Startitright_fourth_pagetitle {
+	font-family: Intro;
+	font-size: 24px;
+	line-height: 21px;
+	margin: 87px 0 85px 0;
+	padding: 0 24px;
+}
+
+.Fuhua22_content_pagetitle {
+	font-family: Intro;
+	font-size: 24px;
+	padding: 0 24px;
+}
+
+.image_two_container {
+	margin-top: 28px;
+}
+
+.image_three_container {
+	margin-top: 28px;
+}
+
+/* Start it right page css end here */
+
+/* CNY Page Css start here */
+.cny_pagetitle {
+	font-family: Intro;
+	font-size: 24px;
+	line-height: 20px;
+	padding: 20px 60px 34px;
+}
+
+.section_title {
+	padding: 51px 78px;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 20px;
+	font-family: Intro;
+}
+
+.section_title_second {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 20px;
+	margin: 131px auto 0;
+	padding: 0 28px;
+	font-family: Intro;
+}
+
+.section_title_third {
+	padding: 63px 41px 32px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 20px;
+	font-family: Intro;
+}
+
+.cny_imageone_container {
+	width: 1050.28px;
+	height: 422.89px;
+	text-align: center;
+	margin-left: -356px;
+	margin-top: 55px;
+}
+
+.video_container {
+	background: url(../img/CNY/VideoBackground.png);
+	width: 414px;
+	height: 323px;
+	margin-bottom: 70px;
+}
+
+.container {
+	overflow: hidden;
+}
+
+.whitecloudCNY {
+	margin-top: -679px;
+	position: relative;
+	z-index: -1;
+}
+
+/* CNY Page Css End here */
+
+/* Hari Raya Celebrartion Page css Start Here */
+.HR_Page_title {
+	font-family: Intro;
+	font-size: 25px;
+	line-height: 20px;
+	padding: 20px 60px 34px;
+}
+
+.CNY_contents {
+	padding: 0px 93px;
+}
+
+.HR_Page_title_second {
+	padding: 10px 30px 30px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 20px;
+	font-family: Intro;
+}
+
+.HR_Page_title_third {
+	padding: 10px 30px 30px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 20px;
+	font-family: Intro;
+}
+
+.HR_Page_title_fourth {
+	padding: 30px 24px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 20px;
+	font-family: Intro;
+}
+
+.whitecloudHr {
+	margin-top: -514px;
+	position: relative;
+	top: -10px;
+}
+
+.video_container_hr {
+	margin-top: -79px;
+}
+
+* {
+	box-sizing: border-box
+}
+
+.mySlides {
+	display: none
+}
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 5px;
+	width: 5px;
+	margin: 0 2px;
+	background-color: white;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.dot2 {
+	cursor: pointer;
+	height: 5px;
+	width: 5px;
+	margin: 0 2px;
+	background-color: white;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover, .dot2:hover {
+	background-color: saddlebrown;
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+.whitecloudHr {
+	display: block;
+	overflow: hidden;
+	width: 414px;
+	height: auto;
+	left: 0;
+	right: 0;
+	top: 17px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: -1;
+	position: relative;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+	.prev,
+	.next,
+	.text {
+		font-size: 11px
+	}
+}
+
+@media only screen and (max-width: 300px) {
+
+	.prev2,
+	.next2,
+	.text {
+		font-size: 11px
+	}
+}
+
+/* Hari Raya Celebration Page css End Here */
+
+/* Fuhua 2022 starts CSS global CSS */
+
+.Fuhua22_Page_title {
+	font-family: Intro;
+	line-height: 20px;
+	font-size: 24px;
+	padding: 20px 60px 34px;
+}
+
+/* Fuhua 2022 end CSS global CSS */
+
+/* HBL artefacts page css START here */
+.HBL_Page_title {
+	font-family: Intro;
+	line-height: 20px;
+	font-size: 24px;
+	padding: 20px 60px 34px;
+}
+
+.PLC_Page_title {
+	font-family: Intro;
+	line-height: 20px;
+	font-size: 24px;
+	padding: 20px 40px 34px;
+}
+
+.HBL_contents {
+	padding: 0px 93px;
+}
+
+.imageholder_one {
+	margin-top: 55px;
+}
+
+.imageholder_two {
+	margin-top: 33px;
+}
+
+.imageholder_three {
+	margin-bottom: 102px;
+	margin-top: 33px;
+}
+
+/* HBL artefacts page css END here */
+
+/* 80th Anniv page css Start here */
+.anniv_page_title {
+	font-family: Intro;
+	font-size: 24px;
+	line-height: 20px;
+	padding: 20px 60px 34px;
+}
+
+.anniv_contents {
+	padding: 0px 93px;
+}
+
+.anniv_image_one {
+	margin-top: 55px;
+}
+
+.anniv_section_page {
+	margin-top: 33px;
+	font-family: Intro;
+	font-size: 24px;
+	line-height: 20px;
+}
+
+.anniv_image_two {
+	margin-bottom: 102px;
+}
+
+/* 80th Anniv page css End here */
+
+/* Staff workshop Page css Start here */
+.Sw_Page_title {
+	font-family: Intro;
+	font-size: 24px;
+	line-height: 20px;
+	padding: 20px 60px 34px;
+}
+
+.Sw_contents {
+	padding: 0px 93px;
+}
+
+.Sw_Section_Title_staff_workshops {
+	font-family: Intro;
+	font-size: 24px;
+	line-height: 20px;
+	padding: 63px 74px 0;
+}
+
+.Sw_Section_Title_WWW {
+	font-family: Intro;
+	font-size: 24px;
+	line-height: 20px;
+	margin-top: 33px;
+}
+
+.Sw_contents_two {
+	padding: 0px 86px 30px;
+}
+
+.sw_imageholder_two {
+	margin-bottom: 102px;
+}
+
+/* Staff workshop Page css End here */
+
+/* National Day Page Css Start Here */
+.nationalday_page_title {
+	font-family: Intro;
+	font-size: 24px;
+	line-height: 20px;
+	padding: 20px 60px 34px;
+}
+
+.NationalDay_contents {
+	padding: 0px 93px 20px;
+}
+
+.container .ND_Section_title_National_day {
+	font-family: Intro;
+	font-size: 24px;
+	line-height: 20px;
+}
+
+.ND_imageholder_one {
+	margin-bottom: 102px;
+	margin-top: 13px;
+}
+
+/* National Day Page Css End Here */
+
+/* Sparkles Day Page Css Start here */
+.Sparkles_day_page_title {
+	font-family: Intro;
+	font-size: 25px;
+	line-height: 25px;
+	padding: 20px 60px 34px;
+}
+
+.SpaklesDay_contents {
+	padding: 0px 93px;
+	font-size: 19px;
+}
+
+.SD_section_title {
+	padding: 40px 30px 0;
+	line-height: 20px;
+	font-size: 24px;
+	font-family: Intro;
+}
+
+.DP_imageholder_one {
+	margin-bottom: 10px;
+	margin-top: 8px;
+}
+
+.DP_imageholder_two {
+	/* margin-bottom: 5px; */
+	margin-top: 8px;
+}
+
+.SD_imageholder {
+	/* margin-bottom: 5px; */
+	margin-top: 8px;
+}
+
+/* Sparkles Day Page Css End here */
+
+/* Teachers Day Css Start here */
+.td_Page_title {
+	font-family: Intro;
+	font-size: 24px;
+	line-height: 20px;
+	padding: 20px 60px 34px;
+}
+
+.Teachersday_contents {
+	padding: 0px 93px;
+	font-size: 19px;
+}
+
+.TD_section_title_tdPrgramme {
+	font-family: Intro;
+	padding: 30px 89px 0px;
+	line-height: 20px;
+	font-size: 24px;
+}
+
+.TD_imageholder_one {
+	margin-top: 8px;
+}
+
+.TD_section_title_celebrating {
+	font-family: Intro;
+	padding: 52px 32px;
+	line-height: 20px;
+	font-size: 24px;
+}
+
+.TD_imageholder_two {
+	margin-bottom: 102px;
+}
+
+/* Teachers Day Css End here */
+/* Children Day Css Start here */
+.CD_Page_title {
+	font-family: Intro;
+	font-size: 24px;
+	line-height: 20px;
+	padding: 20px 60px 34px;
+}
+
+.ChildrensDay_contents {
+	padding: 0px 93px;
+	font-size: 19px;
+}
+
+.CD_section_title_behind {
+	font-family: Intro;
+	padding: 30px 70px 5px;
+	line-height: 20px;
+	font-size: 19px;
+}
+
+.Cd_desc_behind {
+	font-family: Century-Gothic;
+	line-height: 20px;
+	font-size: 19px;
+	padding-bottom: 30px;
+}
+
+/* Children Day Css End here */
+
+/* SINGAPORE YOUTH FESTIVAL Page Css Start Here */
+.SYF_Page_title {
+	font-family: Intro;
+	font-size: 24px;
+	line-height: 20px;
+	padding: 20px 60px 34px;
+}
+
+.SingaporeYouthFestival_contents {
+	padding: 0px 93px;
+	font-size: 19px;
+}
+
+.SYF_imageholder_one {
+	padding: 30px 0 100px;
+}
+
+/* SINGAPORE YOUTH FESTIVAL Page Css End Here */
+
+/* 80th Anniversary Celebrations Page Css Start Here */
+.anniv_celebrations_page_title {
+	font-family: Intro;
+	font-size: 24px;
+	line-height: 20px;
+	padding: 20px 60px 34px;
+}
+
+.EightiethAnnivCeleb_contents {
+	padding: 0px 93px 80px;
+	font-size: 19px;
+}
+
+.EightiethAnnivCeleb_section_tile {
+	font-family: Intro;
+	padding: 0px 70px;
+	line-height: 20px;
+	font-size: 24px;
+	margin-top: -186px;
+}
+
+.EightiethAnnivCeleb_imageholder_one {
+	margin-top: 30px;
+}
+
+.EightiethAnnivCele_contents p {
+	font-family: Intro;
+	padding: 0px 70px 69px;
+	line-height: 20px;
+	font-size: 24px;
+}
+
+.EightiethAnnivCeleb_one {
+	margin-top: -30px;
+}
+
+.whitecloud80thAnnivCeleb {
+	margin-top: -30px;
+	position: relative;
+	z-index: -1;
+}
+
+.EightiethAnnivCeleb_section_Virtual p {
+	font-family: Intro;
+	padding: 0px 70px;
+	line-height: 20px;
+	font-size: 24px;
+	margin-top: -186px;
+}
+
+.EightiethAnnivCeleb_section_school_heritage_one p {
+	font-family: Intro;
+	padding: 0px 70px;
+	line-height: 20px;
+	font-size: 24px;
+	margin-bottom: 63px;
+}
+
+.EightiethAnnivCeleb_section_school_heritage_two p {
+	font-family: Intro;
+	padding: 62px 70px 0;
+	line-height: 20px;
+	font-size: 24px;
+	margin-bottom: 63px;
+}
+
+.EightiethAnnivCeleb_imageholder_one {
+	margin-top: 61px;
+}
+
+.EightiethAnnivCeleb_section_token {
+	overflow: hidden;
+}
+
+.EightiethAnnivCeleb_section_token p {
+	font-family: Intro;
+	padding: 62px 30px 0;
+	line-height: 20px;
+	font-size: 24px;
+	margin-bottom: 63px;
+}
+
+.EightiethAnnivCeleb_section_token img {
+	margin-left: -48px;
+	margin-bottom: 94px;
+}
+
+/* 80th Anniversary Celebrations Page Css End Here */
+
+/* READING WEEK Page Css Start here */
+.RW_page_title {
+	font-family: Intro;
+	font-size: 25px;
+	line-height: 25px;
+	padding: 20px 60px 34px;
+}
+
+.Reading_week_container {
+	background-image: url('../img/ReadingWeek/ReadWeekBG.png');
+	width: 414px;
+	height: 1361px;
+	position: relative;
+	z-index: -1;
+	margin-top: 78px;
+	margin-bottom: 100px;
+}
+
+.reading_week_inner_p {
+	font-family: Intro;
+	font-size: 19px;
+	color: #ffff;
+	position: absolute;
+	top: 85px;
+	margin: auto;
+	padding: 21px 61px;
+	line-height: 20px;
+}
+
+.reading_week_inner_img {
+	margin-top: 147px;
+}
+
+.reading_week_inner_p_two {
+	font-family: Intro;
+	font-size: 19px;
+	color: #ffff;
+	position: absolute;
+	top: 366px;
+	margin: -11px auto;
+	padding: 16px 119px;
+	line-height: 20px;
+}
+
+.reading_week_inner_img_two {
+	margin-top: 108px;
+}
+
+.reading_week_inner_p_three {
+	font-family: Intro;
+	font-size: 19px;
+	color: #ffff;
+	position: absolute;
+	top: 930px;
+	margin: -3px auto;
+	padding: 16px 32px;
+	line-height: 20px;
+}
+
+.reading_week_inner_img_three {
+	margin-top: 66px;
+}
+
+.reading_week_inner_img_four {
+	margin-top: 20px;
+}
+
+/* READING WEEK Page Css End here */
+
+/* CCA Page Css Start here */
+.cca_page_title {
+	font-family: Intro;
+	font-size: 25px;
+	line-height: 25px;
+	padding: 20px 60px 34px;
+}
+
+.CCA_contents {
+	padding: 0px 91px;
+}
+
+.cca_container {
+	width: 414px;
+	/* height: 1011px; */
+	position: relative;
+	z-index: -1;
+	margin-top: 110px;
+	margin-bottom: 50px;
+}
+
+.cca_inner_container_p {
+	font-family: Intro;
+	font-size: 19px;
+	color: #ffff;
+	position: absolute;
+	top: 92px;
+	margin-left: 18px;
+}
+
+.cca_inner_container_img {
+	margin-top: 158px;
+}
+
+.cca_inner_container_p_two {
+	font-family: Intro;
+	font-size: 19px;
+	color: #ffff;
+	position: absolute;
+	top: 400px;
+	margin-left: 18px;
+}
+
+.cca_inner_container_img_two {
+	margin-top: 112px;
+}
+
+.cca_inner_container_p_three {
+	font-family: Intro;
+	font-size: 19px;
+	color: #ffff;
+	position: absolute;
+	top: 714px;
+	margin-left: 18px;
+}
+
+.whitecloudCCA {
+	margin-top: -100px;
+	position: relative;
+	z-index: -1;
+}
+
+.cca_inner_container .cca_container_one {
+	font-family: Intro;
+	font-size: 24px;
+	line-height: 20px;
+	margin-top: -31px;
+}
+
+.cca_container_two .cca_container_two_p {
+	font-family: Intro;
+	font-size: 24px;
+	line-height: 20px;
+	margin-top: -31px;
+}
+
+.cca_container_two .cca_container_two_p_two {
+	font-family: Century-Gothic;
+	font-size: 19px;
+	line-height: 25px;
+	margin-bottom: 62px;
+}
+
+.whitecloudCCA_two {
+	margin-top: -19px;
+	position: relative;
+	z-index: -1;
+}
+
+.cca_container_three p {
+	font-family: Intro;
+	font-size: 24px;
+	line-height: 20px;
+	margin-top: -186px;
+}
+
+.cca_container_fifth p {
+	font-family: Century-Gothic;
+	font-size: 19px;
+	line-height: 25px;
+	padding: 63px 74px;
+}
+
+.cca_container_seventh p {
+	font-family: Century-Gothic;
+	font-size: 19px;
+	line-height: 25px;
+	padding: 63px 74px;
+}
+
+.cca_container_nine p {
+	font-family: Century-Gothic;
+	font-size: 19px;
+	line-height: 25px;
+	padding: 63px 74px;
+}
+
+.cca_container_eleven p {
+	font-family: Century-Gothic;
+	font-size: 19px;
+	line-height: 25px;
+	padding: 63px 81px 0px;
+}
+
+.whitecloudCCA_three {
+	margin-top: 49px;
+	position: relative;
+	z-index: -1;
+	padding: 63px 0px;
+}
+
+.cca_container_twelve p {
+	font-family: Intro;
+	font-size: 24px;
+	line-height: 20px;
+	margin-top: -245px;
+}
+
+.cca_container_thrirteen img {
+	margin-top: 49px;
+}
+
+.cca_container_fourteen {
+	background-image: url("../img/CCA/CCAImage19.png");
+	width: 414px;
+	height: 2421px;
+	margin-bottom: 101px;
+	margin-top: 60px;
+}
+
+.CCAgallery {
+	display: grid;
+	grid-template-columns: repeat(2, 354px);
+	grid-template-rows: 1fr;
+	grid-column-gap: 1rem;
+	grid-row-gap: 1rem;
+	overflow: scroll;
+	height: 266px;
+	scroll-snap-type: both mandatory;
+	scroll-padding: 1rem;
+	scrollbar-width: thin;
+}
+
+.CCAactive {
+	scroll-snap-type: unset;
+}
+
+li {
+	scroll-snap-align: center;
+	display: inline-block;
+	border-radius: 3px;
+	font-size: 0;
+}
+
+.CCAgallery_container {
+	padding-top: 157px;
+}
+
+/* CCA Page Css End here */
+
+/* SAC Page Css Start here */
+.SAC_parentcontainer {
+	background-image: url('../img/SAC/SACImage9.png');
+	width: 414px;
+}
+
+.SAC_cloud {
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	width: 414px;
+	height: auto;
+	left: 0;
+	right: 0;
+	top: 86px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 0;
+}
+
+
+.SAC_container {
+	overflow: hidden;
+}
+
+.SAC_innerContainer {
+	margin-top: -18px;
+}
+
+.SAC_container img {
+	margin-left: -78px;
+}
+
+.whitecloudSAC {
+	/* margin-top: 274px; */
+	position: absolute;
+	z-index: 0;
+	width: 414px;
+}
+
+.whitecloudSAC2 {
+	margin-top: 589px;
+	position: absolute;
+	z-index: 0;
+	width: 414px;
+}
+
+.whitecloudSAC3 {
+	margin-top: 1101px;
+	position: absolute;
+	z-index: 0;
+	width: 414px;
+}
+
+.whitecloudSAC4 {
+	margin-top: 1662px;
+	position: absolute;
+	z-index: 0;
+	width: 414px;
+}
+
+.whitecloudSAC5 {
+	margin-top: 2004px;
+	position: absolute;
+	z-index: 0;
+	width: 414px;
+}
+
+.whitecloudSAC6 {
+	margin-top: 2676px;
+	position: absolute;
+	z-index: 0;
+	width: 414px;
+}
+
+.SAC_container_two {
+	overflow: hidden;
+	margin-top: -136px;
+	width: 414px;
+	height: 3732px;
+}
+
+.SAC_container_two img {
+	margin-left: -300px;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+}
+
+/* SAC Page Css End here */
+
+/* IFD Page Css Start Here */
+.IFDgallery {
+	display: grid;
+	grid-template-columns: repeat(4, 414px);
+	grid-template-rows: 1fr;
+	grid-column-gap: 1rem;
+	grid-row-gap: 1rem;
+	overflow: scroll;
+	height: 320px;
+	scroll-snap-type: both mandatory;
+	scroll-padding: 1rem;
+	scrollbar-width: thin;
+}
+
+.active {
+	scroll-snap-type: unset;
+}
+
+li {
+	scroll-snap-align: center;
+	display: inline-block;
+	border-radius: 3px;
+	font-size: 0;
+}
+
+/* IFD Page Css End Here */
+/* ==================================================== */
+
+/* Prefectorial start Page Css  */
+.PRE_contents {
+	padding: 0px 63px;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.PRE_imageholder {
+	margin-bottom: 102px;
+	margin-top: 8px;
+}
+
+/* Prefectorial end Page Css  */
+
+/* Values In Action starts Page Css  */
+.VIA_contents {
+	padding: 0px 63px;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.whitecloudVIA {
+	margin-top: -150px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.VIA_imageholder {
+	position: relative;
+	margin-bottom: 102px;
+	margin-top: 8px;
+	z-index: 2;
+}
+
+.VIA_video_container {
+	background: url(../img/Citizen\ Leader/VIA/VideoBackground.png);
+	width: 414px;
+	height: 323px;
+	margin-bottom: 70px;
+}
+
+/* Values In Action ends Page Css  */
+
+/* Sixxer Programme start Page Css  */
+.SP_contents {
+	padding: 0px 63px;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.SP_imageholder {
+	margin-bottom: 102px;
+	margin-top: 8px;
+}
+
+.SP_video_container {
+	background: url(../img/Background/bg_1.png);
+	width: 414px;
+	height: 246px;
+	margin-bottom: 70px;
+}
+
+.SP_video_container2 {
+	background: url(../img/Background/bg_2.png);
+	width: 414px;
+	height: 703px;
+	margin-bottom: 70px;
+}
+
+/* Sixxer Programme end Page Css  */
+
+/* Cyberwellness starts Page Css  */
+.CB_contents {
+	padding: 0px 63px;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.CB_imageholder {
+	position: relative;
+	z-index: 2;
+}
+
+.CB_pagetitle {
+	font-family: Intro;
+	font-size: 24px;
+	padding: 0 24px;
+	margin-top: 50px;
+}
+
+.whitecloudCB {
+	margin-top: -160px;
+	position: relative;
+	overflow: hidden;
+	z-index: -1;
+}
+
+/* Cyberwellness end Page Css  */
+
+/* National Day Celebration start Page Css  */
+.NDC_contents {
+	padding: 0px 63px;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.NDC_imageholder {
+	position: relative;
+	z-index: 2;
+	margin-bottom: 102px;
+	margin-top: 4px;
+}
+.NDC_video_container {
+	background: url(../img/Background/bg_2.png);
+	width: 414px;
+	height: 703px;
+	margin-bottom: 70px;
+}
+
+.whitecloudNDC {
+	margin-top: -150px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+/* National Day Celebration end Page Css  */
+
+/* Racial Harmony Day  start Page Css  */
+.RHD_contents {
+	padding: 0px 63px;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.whitecloudRHD {
+	margin-top: -290px;
+	position: relative;
+	top: 300px;
+	z-index: -1;
+}
+
+/* Racial Harmony Day  end Page Css  */
+
+/* Departments Highlights  start Page Css  */
+.DH_header_contents {
+	padding: 0px 27px;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.DH_contents {
+	padding: 0px 27px;
+	text-align: justify;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.DH_Page_title {
+	padding: 0px 30px 0px 30px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 20px;
+	font-family: Intro;
+	position: relative;
+	z-index: 2;
+}
+
+.DH_imageholder_one {
+	position: relative;
+	margin-bottom: 10px;
+	z-index: 1;
+}
+
+.DH_imageholder_two {
+	margin-top: 0px;
+}
+
+.whitecloudDH {
+	margin-top: -50px;
+	position: relative;
+	overflow: hidden;
+	z-index: -1;
+}
+
+/* Departments Highlights  end Page Css  */
+
+/* Learning Journey  start Page Css  */
+.LJ_contents {
+	padding: 0px 63px;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: left;
+}
+
+.LJ_imageholder_one {
+	margin-bottom: 102px;
+	margin-top: 8px;
+}
+
+.whitecloudLJ {
+	margin-top: -20px;
+	position: relative;
+	overflow: hidden;
+	z-index: -1;
+}
+
+/* Learning Journey  end Page Css  */
+
+/* LLP Programme  start Page Css  */
+.LLP_contents {
+	padding: 0px 50px;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: left;
+}
+
+.LLP_imageholder {
+	position: relative;
+	margin-top: 8px;
+	margin-bottom: 10px;
+	z-index: 1;
+}
+
+.LLP_Page_title {
+	position: relative;
+	padding: 0px 5px 0px 5px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 20px;
+	font-family: Intro;
+	z-index: 2;
+}
+
+.whitecloudLLP {
+	margin-top: -60px;
+	position: relative;
+	overflow: hidden;
+	z-index: -1;
+}
+
+/* LLP Programme  end Page Css  */
+
+/* Lower Primary Drama  Lower Primary Sports Day start Page Css  */
+.LP_contents {
+	padding: 0px 50px;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: left;
+}
+
+.LP_imageholder {
+	position: relative;
+	margin-top: 8px;
+	z-index: 1;
+}
+
+.LP_Page_title {
+	position: relative;
+	padding: 0px 5px 0px 5px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 20px;
+	font-family: Intro;
+	z-index: 2;
+}
+
+.whitecloudLP {
+	margin-top: -150px;
+	position: relative;
+	overflow: hidden;
+	z-index: -1;
+}
+
+/* Lower Primary Drama and Lower Primary Sports Day  end Page Css  */
+
+/* Mother Tongue Fortnight  start Page Css  */
+.MTF_contents {
+	padding: 0px 50px;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: left;
+}
+
+.MTF_imageholder {
+	margin-top: -10px;
+}
+
+.MTF_Page_title {
+	padding: 0px 5px 0px 5px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 20px;
+	font-family: Intro;
+}
+.MTF1_Page_title {
+	padding: 0px 5px 0px 5px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 20px;
+	font-family: Intro;
+	color: white;
+}
+.MTF2_Page_title {
+	padding: 0px 5px 0px 5px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 20px;
+	font-family: Intro;
+	margin-bottom: -50px;
+	margin-top: 40px;
+}
+.MTF_container {
+	background-image: url("../img/Lifelong\ Learner/MT/bg.png");
+	width: 414px;
+	height: 716px;
+	margin-bottom: 90px;
+	margin-top: 60px;
+}
+
+/* Mother Tongue Fortnight  end Page Css  */
+
+/* Book Chapter Day start Page Css  */
+.BCD_contents {
+	padding: 0px 50px;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: left;
+}
+
+.BCD_imageholder {
+	margin-top: 8px;
+}
+
+.whitecloudBCD {
+	margin-top: -20px;
+	position: relative;
+	overflow: hidden;
+	z-index: -1;
+}
+
+/* Book Chapter Day end Page Css  */
+
+/* NML start Page Css  */
+.NML_contents {
+	padding: 0px 60px;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: left;
+}
+
+.NML_imageholder {
+	margin-top: 8px;
+}
+
+.NML_Page_title {
+	padding: 0px 5px 0px 5px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 20px;
+	font-family: Intro;
+}
+
+/* NML end Page Css  */
+
+/* Art start Page Css  */
+.A_header_contents {
+	padding: 0px 63px;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.A_contents {
+	padding: 0px 45px;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+}
+
+.A_imageholder {
+	margin-top: 8px;
+	position: relative;
+	/* This ensures a proper stacking context for z-index */
+	z-index: 2;
+}
+
+.whitecloudLP {
+	margin-top: -20px;
+	position: relative;
+	overflow: hidden;
+	z-index: -1;
+}
+
+/* Art end Page Css  */
+
+/* Mother Tongue start Page Css  */
+.MT_contents {
+	padding: 0px 55px;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.MT_imageholder {
+	margin-top: 8px;
+}
+
+.MT_Page_title {
+	padding: 0px 5px 0px 5px;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 20px;
+	font-family: Intro;
+}
+
+.whitecloudMT {
+	margin-top: -20px;
+	position: relative;
+	overflow: hidden;
+	z-index: -1;
+}
+
+/* Mother Tongue end Page Css  */
+
+/* ALP start Page Css  */
+.ALP_contents {
+	padding: 0px 63px;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ALP_imageholder {
+	margin-top: 8px;
+}
+
+/* ALP end Page Css  */
+
+/* Staff and Students start Page Css  */
+.S_imageholder {
+	margin-top: 8px;
+}
+
+.S_Page_title {
+	padding: 0px 5px 0px 5px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 20px;
+	font-family: Intro;
+}
+.S1_Page_title {
+	padding: 0px 5px 0px 5px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 20px;
+	font-family: Intro;
+	color: #412003;
+	margin-top: 100px;
+	margin-bottom: -30px;
+}
+.S_container {
+	background-image: url("../img/FOA/Students/ST_41.png");
+	width: 414px;
+	height: 669px;
+	margin-bottom: 101px;
+	margin-top: 60px;
+}
+.S1_container {
+	background-image: url("../img/FOA/Students/ST_61.png");
+	width: 414px;
+	height: 1195px;
+	margin-bottom: 101px;
+	margin-top: 60px;
+}
+
+.whitecloudST {
+	margin-top: -20px;
+	position: relative;
+	overflow: hidden;
+	z-index: -1;
+}
+
+/* Staff and Students end Page Css  */
+
+/* Teacher Day Celebration start Page Css  */
+.TDC_imageholder {
+	/* margin-bottom: 5px; */
+	margin-top: 8px;
+}
+
+.TDC_contents {
+	padding: 0px 63px;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.TDC_container {
+	background-image: url("../img/FOP/TDC/bg.png");
+	width: 414px;
+	height: 669px;
+	margin-bottom: 101px;
+	margin-top: 60px;
+}
+
+.TDCgallery_container {
+	padding-top: 157px;
+}
+
+/* Teacher Day Celebration  end Page Css  */
+
+/* PELC start Page Css */
+.PLC_contents {
+	padding: 0px 63px;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.PLC_imageholder {
+	margin-top: 8px;
+}
+
+.whitecloudPLC {
+	margin-top: -20px;
+	position: relative;
+	overflow: hidden;
+	z-index: -1;
+}
+
+/* PELC end Page Css */
+
+/* Staff Development start Page Css */
+.SD_Page_title {
+	padding: 0px 5px 0px 5px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 20px;
+	font-family: Intro;
+}
+
+.SD_imageholder {
+	margin-bottom: 102px;
+	margin-top: 8px;
+}
+
+.SD_contents {
+	padding: 0px 72px;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.whitecloudSD {
+	margin-top: -100px;
+	position: relative;
+	overflow: hidden;
+	z-index: -1;
+}
+
+/* Staff Development end Page Css */
+
+/* N4S start Page Css */
+.NS_imageholder {
+	margin-top: 8px;
+}
+
+.NS_contents {
+	padding: 0px 63px;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.NS_Page_title {
+	padding: 0px 5px 0px 5px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 20px;
+	font-family: Intro;
+}
+
+.whitecloudNS {
+	margin-top: -20px;
+	position: relative;
+	overflow: hidden;
+	z-index: -1;
+}
+
+/* N4S end Page Css */
+
+/* Student Voices start Page Css */
+.SV_contents {
+	padding: 0px 50px;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: left;
+}
+
+.SV_imageholder {
+	margin-top: 8px;
+}
+
+.SV_Page_title {
+	padding: 0px 5px 0px 5px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 20px;
+	font-family: Intro;
+}
+
+.whitecloudLP {
+	margin-top: -20px;
+	position: relative;
+	overflow: hidden;
+	z-index: -1;
+}
+
+/* Student Voices end Page Css */
+
+/* Founders Day start Page Css */
+.FD_contents {
+	padding: 0px 70px;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.FD_imageholder {
+	margin-top: 8px;
+}
+
+.FD_Page_title {
+	padding: 0px 5px 0px 5px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 20px;
+	font-family: Intro;
+}
+
+/* Founders Day end Page Css */
+
+/* P6 Graduation Night start Page Css */
+.GN_contents {
+	padding: 0px 40px;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.GN_imageholder {
+	/* margin-bottom: 5px; */
+	margin-top: 8px;
+}
+
+.whitecloudNS {
+	margin-top: 10px;
+	position: relative;
+	top: -20px;
+	z-index: -1;
+}
+
+/* P6 Graduation Night end Page Css */
+
+/* SC Childrens Day start Page Css */
+.CD_contents {
+	padding: 0px 63px;
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.CD_imageholder {
+	/* margin-bottom: 5px; */
+	margin-top: 8px;
+}
+
+.SCD_Page_title {
+	padding: 0px 5px 0px 5px;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 20px;
+	font-family: Intro;
+}
+.SCD_container {
+	background-image: url("../img/School\ Events/CD/bg.png");
+	width: 414px;
+	height: 396px;
+	margin-bottom: 101px;
+	margin-top: -20px;
+}
+
+.whitecloudSCD {
+	margin-top: -20px;
+	position: relative;
+	overflow: hidden;
+	z-index: -1;
+}
+
+/* SC Students Voices end Page Css */
