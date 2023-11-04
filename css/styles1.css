@@ -1738,6 +1738,8 @@ li {
 .CB_imageholder {
 	position: relative;
 	z-index: 2;
+	width:414px;
+	height: auto;
 }
 
 .CB_pagetitle {
@@ -1887,6 +1889,8 @@ li {
 
 .LLP_imageholder {
 	position: relative;
+	width: 414px;
+	height: auto;
 	margin-top: 8px;
 	margin-bottom: 10px;
 	z-index: 1;
@@ -2315,6 +2319,8 @@ li {
 
 .FD_imageholder {
 	margin-top: 8px;
+	width: 414px;
+	height: auto;
 }
 
 .FD_Page_title {
