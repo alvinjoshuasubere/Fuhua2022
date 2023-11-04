@@ -224,6 +224,7 @@ p {
 .menubar2022 {
 	background-color: #B98236;
 	width: 360px;
+	font-size: 20px;
 	border-radius: 0px 0px 0px 0px;
 	font-size: 14px;
 	transition: background-color 0.5s;
@@ -240,6 +241,7 @@ p {
 .menubar2022-first {
 	background-color: #B98236;
 	width: 360px;
+	font-size: 20px;
 	border-radius: 30px 0px 0px 0px;
 	font-size: 14px;
 	transition: background-color 0.5s;
@@ -255,6 +257,7 @@ p {
 .menubar2022-last {
 	background-color: #B98236;
 	width: 360px;
+	font-size: 20px;
 	border-radius: 0px 0px 0px 30px;
 	font-size: 14px;
 	transition: background-color 0.5s;
@@ -328,6 +331,20 @@ p {
 	display: inline-block;
 	/* border: 1px solid white; */
 }
+
+.page-title2022 {
+	width: 244px;
+	background-color: none;
+	color: white;
+	position: relative;
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	display: inline-block;
+	/* border: 1px solid white; */
+}
+
 
 button {
 	width: 38px;
@@ -457,11 +474,11 @@ img {
 	cursor: pointer;
 	position: absolute;
 	top: 50%;
-	padding: 5px;
+	padding: 12px;
 	margin-top: -32px;
 	color: #462F20;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 15px;
 	transition: 0.6s ease;
 	border-radius: 50%;
 	user-select: none;
@@ -488,6 +505,83 @@ img {
 	background-color: #462F20;
 	color: white;
 }
+/* ============================ */
+/* Next & previous buttons */
+.prev3,
+.next3 {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	padding: 12px;
+	margin-top: -32px;
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+	transition: 0.6s ease;
+	border-radius: 50%;
+	user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+.next3 {
+	right: 0;
+	background-color: #412003;
+	height: 40px;
+	width: 40px;
+}
+
+
+/* Position the "next button" to the left */
+.prev3 {
+	left: 0;
+	background-color: #412003;
+	height: 40px;
+	width: 40px;
+}
+
+
+/* On hover, add a grey background color */
+.prev3:hover,
+.next3:hover {
+	background-color: #f1f1f1;
+	color: #412003;
+}
+/* ================================ */
+/* Next & previous buttons */
+.prev4,
+.next4 {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	padding: 12px;
+	margin-top: -32px;
+	color: #412003;
+	font-weight: bold;
+	font-size: 15px;
+	transition: 0.6s ease;
+	border-radius: 50%;
+	user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+.next4 {
+	right: 0;
+	background-color: white;
+	height: 40px;
+	width: 40px;
+}
+
+
+/* Position the "next button" to the left */
+.prev4 {
+	left: 0;
+	background-color: white;
+	height: 40px;
+	width: 40px;
+}
+
 
 /*End  Fuhua 2022 Design Slider */
 
@@ -864,7 +958,7 @@ img {
 	height: 5px;
 	width: 5px;
 	margin: 0 2px;
-	background-color: white;
+	background-color: #808080 ;
 	border-radius: 50%;
 	display: inline-block;
 	transition: background-color 0.6s ease;
@@ -872,7 +966,7 @@ img {
 
 .active,
 .dot:hover, .dot2:hover {
-	background-color: saddlebrown;
+	background-color: #331800;
 }
 
 /* Fading animation */
@@ -941,7 +1035,7 @@ img {
 /* Fuhua 2022 starts CSS global CSS */
 
 .Fuhua22_Page_title {
-	font-family: Intro;
+	font-family: Montserrat;
 	line-height: 20px;
 	font-size: 24px;
 	padding: 20px 60px 34px;
@@ -1746,7 +1840,8 @@ li {
 }
 
 .CB_pagetitle {
-	font-family: Intro;
+	font-family: Montserrat;
+	text-transform: uppercase;
 	font-size: 24px;
 	padding: 0 24px;
 	margin-top: 50px;
@@ -1834,7 +1929,8 @@ li {
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 20px;
-	font-family: Intro;
+	font-family: Montserrat;
+	text-transform: uppercase;
 	position: relative;
 	z-index: 2;
 }
@@ -1905,7 +2001,8 @@ li {
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 20px;
-	font-family: Intro;
+	text-transform: uppercase;
+	font-family: Montserrat;
 	z-index: 2;
 }
 
@@ -1929,7 +2026,6 @@ li {
 
 .LP_imageholder {
 	position: relative;
-	margin-top: 8px;
 	z-index: 1;
 }
 
@@ -1939,7 +2035,8 @@ li {
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 20px;
-	font-family: Intro;
+	text-transform: uppercase;
+	font-family: Montserrat;
 	z-index: 2;
 }
 
@@ -1962,7 +2059,7 @@ li {
 }
 
 .MTF_imageholder {
-	margin-top: -10px;
+	margin-top: 20px;
 }
 
 .MTF_Page_title {
@@ -1970,14 +2067,17 @@ li {
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 20px;
-	font-family: Intro;
+	font-family: Montserrat;
+	text-transform: uppercase;
+	margin-bottom: -10px;
 }
 .MTF1_Page_title {
 	padding: 0px 5px 0px 5px;
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 20px;
-	font-family: Intro;
+	font-family: Montserrat;
+	text-transform: uppercase;
 	color: white;
 }
 .MTF2_Page_title {
@@ -1985,7 +2085,8 @@ li {
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 20px;
-	font-family: Intro;
+	font-family: Montserrat;
+	text-transform: uppercase;
 	margin-bottom: -50px;
 	margin-top: 40px;
 }
@@ -2071,7 +2172,7 @@ li {
 }
 
 .A_imageholder {
-	margin-top: 8px;
+	margin-top: 5px;
 	position: relative;
 	/* This ensures a proper stacking context for z-index */
 	z-index: 2;
@@ -2104,7 +2205,8 @@ li {
 	font-size: 24px;
 	font-weight: 300;
 	line-height: 20px;
-	font-family: Intro;
+	font-family: Montserrat;
+	text-transform: uppercase;
 }
 
 .whitecloudMT {
@@ -2141,14 +2243,16 @@ li {
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 20px;
-	font-family: Intro;
+	text-transform: uppercase;
+	font-family: Montserrat;
 }
 .S1_Page_title {
 	padding: 0px 5px 0px 5px;
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 20px;
-	font-family: Intro;
+	text-transform: uppercase;
+	font-family: Montserrat;
 	color: #412003;
 	margin-top: 100px;
 	margin-bottom: -30px;
@@ -2215,7 +2319,7 @@ li {
 }
 
 .PLC_imageholder {
-	margin-top: 8px;
+	margin-top: -10px;
 }
 
 .whitecloudPLC {
@@ -2233,7 +2337,8 @@ li {
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 20px;
-	font-family: Intro;
+	text-transform: uppercase;
+	font-family: Montserrat;
 }
 
 .SD_imageholder {
@@ -2276,7 +2381,8 @@ li {
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 20px;
-	font-family: Intro;
+	text-transform: uppercase;
+	font-family: Montserrat;
 }
 
 .whitecloudNS {
@@ -2306,7 +2412,8 @@ li {
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 20px;
-	font-family: Intro;
+	text-transform: uppercase;
+	font-family: Montserrat;
 }
 .SV_video_container {
 	background: url(../img/Background/bg_1.png);
@@ -2344,7 +2451,8 @@ li {
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 20px;
-	font-family: Intro;
+	text-transform: uppercase;
+	font-family: Montserrat;
 }
 
 /* Founders Day end Page Css */
@@ -2397,7 +2505,8 @@ li {
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 20px;
-	font-family: Intro;
+	text-transform: uppercase;
+	font-family: Montserrat;
 }
 .SCD_container {
 	background-image: url("../img/School\ Events/CD/bg.png");
