@@ -2039,7 +2039,14 @@ li {
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 20px;
-	font-family: Intro;
+	font-family: Montserrat;
+	text-transform: uppercase;
+}
+.NML_video_container {
+	background: url(../img/Background/bg_1.png);
+	width: 414px;
+	height: 244px;
+	margin-bottom: 70px;
 }
 
 /* NML end Page Css  */
@@ -2301,6 +2308,12 @@ li {
 	line-height: 20px;
 	font-family: Intro;
 }
+.SV_video_container {
+	background: url(../img/Background/bg_1.png);
+	width: 414px;
+	height: 250px;
+	margin-bottom: 70px;
+}
 
 .whitecloudLP {
 	margin-top: -20px;
@@ -2348,6 +2361,12 @@ li {
 .GN_imageholder {
 	/* margin-bottom: 5px; */
 	margin-top: 8px;
+}
+.GN_video_container {
+	background: url(../img/Background/bg_3.png);
+	width: 414px;
+	height: 338px;
+	margin-bottom: 70px;
 }
 
 .whitecloudNS {
