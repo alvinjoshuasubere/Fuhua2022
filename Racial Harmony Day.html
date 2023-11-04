@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html data-lt-installed="true"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RACIAL HARMONY DAY</title>
+<link rel="stylesheet" href="css/styles1.css">
+</head>
+
+<body cz-shortcut-listen="true">
+	<div class="parentContainer">
+		<!-- THis is hidden background for mobile-->
+		<div><img src="img/Start_it_right/mobile_Bg.png" class="mobile_view">
+		</div>
+		<!-- THis is the CLOUD-->
+		<div class="cloud"><marquee behavior="scroll" direction="left" scrollamount="3"><img src="img/HBL_Artefacts/cloud1.png" alt=""></marquee>
+		</div>
+
+
+
+		<!-- THis is the TOPBAR Start-->
+		<div class="header">
+		<a href="Fuhua2022.html">
+		<div class="button_home"></div>
+		</a>
+
+		<div class="page-title">
+			CITIZEN LEADER
+		</div>
+
+
+		<button onclick="goBack()"></button>
+
+		<script>
+		function goBack() {
+		window.history.back();
+		}
+		</script>
+
+		<a href="Citizen Chapter.html"><!-- THis is NEXT BUTTON-->
+		<div class="button_home"></div>
+		</a>
+		</div><!-- THis is the TOPBAR END-->
+
+
+		<div style="height: 105px"></div>
+
+		<!-- This is PAGE TITLE-->
+		<div >
+		<p class="Fuhua22_Page_title">RACIAL <br>HARMONY DAY</p>
+		</div>
+
+		<div>
+		<p class="RHD_contents">
+			Every Racial Harmony Day, we
+			look forward to donning the 
+			various ethnic costumes and
+			learn more about the different
+			cultures in Singapore.
+		</p>
+		</div>	
+		<div class="whitecloudRHD">
+			<marquee behavior="scroll" direction="left" scrollamount="3"><img src="img/Clouds/WhitecloudRHD.png" alt=""></marquee>
+		</div>
+		<!-- Slider Start Here -->
+		<div id="slideshow1" class="slideshow-container" style="height: 347.63px;">
+			<div class="mySlides fade">
+				<img src="img/Citizen Leader/RHD/RHD_1.png" style="width: auto; height: 321px;">
+			</div>
+		
+			<div class="mySlides fade">
+				<img src="img/Citizen Leader/RHD/RHD_2.png" style="width: auto; height: 321px;">
+			</div>
+		
+			<div class="mySlides fade">
+				<img src="img/Citizen Leader/RHD/RHD_3.png" style="width: auto; height: 321px;">
+			</div>
+
+			<div class="mySlides fade">
+				<img src="img/Citizen Leader/RHD/RHD_4.png" style="width: auto; height: 321px;">
+			</div>
+
+			<div class="mySlides fade">
+				<img src="img/Citizen Leader/RHD/RHD_5.png" style="width: auto; height: 321px;">
+			</div>
+		
+			<a class="prev" onclick="plusSlides(-1,slideshow1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1, slideshow1)">&#10095;</a>
+		
+		
+			<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1, slideshow1)"></span> 
+			<span class="dot" onclick="currentSlide(2, slideshow1)"></span> 
+			<span class="dot" onclick="currentSlide(3, slideshow1)"></span> 
+			<span class="dot" onclick="currentSlide(4, slideshow1)"></span> 
+			<span class="dot" onclick="currentSlide(5, slideshow1)"></span> 
+			</div>
+		</div>
+		
+		<br>
+		<!-- Slider End Here -->
+
+		 <!-- slideshow Javascript start here -->
+		 <script>
+			var slideshow1 = document.getElementById("slideshow1");
+			slideshow1.currentSlideIndex = 1;
+			showSlides(slideshow1.currentSlideIndex, slideshow1);
+		
+			var slideshow2 = document.getElementById("slideshow2");
+			slideshow2.currentSlideIndex = 1;
+			showSlides(slideshow2.currentSlideIndex, slideshow2);
+		
+		
+			function plusSlides(n, slideshow) {
+			showSlides(slideshow.currentSlideIndex += n, slideshow);
+			}
+		
+			function currentSlide(n, slideshow) {
+			showSlides(slideshow.currentSlideIndex = n, slideshow);
+			}
+		
+			function showSlides(n, slideshow) {
+		
+		
+		
+			var i;
+			var slides = slideshow.getElementsByClassName("mySlides");
+			var dots = slideshow.getElementsByClassName("dot");
+			if (n > slides.length) {slideshow.currentSlideIndex = 1}    
+			if (n < 1) {slideshow.currentSlideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+			}
+			for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideshow.currentSlideIndex-1].style.display = "block";  
+			dots[slideshow.currentSlideIndex-1].className += " active";
+			}
+			</script>
+			<!-- Slideshow Javascript end here -->
+		<br>
+		<br>
+		<br>
+		<div style="height: 200px;">
+		<img class="bottom_image" style="padding-top: 30px;" src="img/Start_it_right/bottom_kids.png" alt="">
+		</div>
+	</div>	
+</body></html>

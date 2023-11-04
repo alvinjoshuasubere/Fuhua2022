@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html data-lt-installed="true"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IFD</title>
+<link rel="stylesheet" href="css/styles1.css">
+</head>
+
+<body cz-shortcut-listen="true">
+	<div class="parentContainer">
+		<!-- THis is hidden background for mobile-->
+		<div><img src="img/Start_it_right/mobile_Bg.png" class="mobile_view">
+		</div>
+		<!-- THis is the CLOUD-->
+		<div class="cloud"><marquee behavior="scroll" direction="left" scrollamount="3"><img src="img/Start_it_right/cloud2.png" alt=""></marquee>
+		</div>
+
+
+
+		<!-- THis is the TOPBAR Start-->
+		<div class="header">
+		<a href="Fuhua2021.html">
+		<div class="button_home"></div>
+		</a>
+
+		<div class="page-title">
+		</div>
+
+
+		<button onclick="goBack()"></button>
+
+		<script>
+		function goBack() {
+		window.history.back();
+		}
+		</script>
+
+		<a href="Hari Raya Celebration.html"><!-- THis is NEXT BUTTON-->
+		<div class="button_home"></div>
+		</a>
+		</div><!-- THis is the TOPBAR END-->
+
+
+		<div style="height: 105px"></div>
+
+		<!--This is PAGE TITLE-->
+		<div>
+		<p style="font-family:Intro; font-size:24px; line-height:20px; padding: 20px 0px 34px;">International Friendship 
+		Day Celebrations </p>
+		</div>
+
+		<div>
+		<p class="IFD_contents" style="padding: 0px 93px;">
+		Singapore is a small nation who understands 
+		the importance of forging strong solidarity 
+		and friendship with her neighbouring countries 
+		in order to survive. International Friendship
+		Day is dedicated to the understanding of 
+		Singapore’s relations with neighbouring 
+		countries and beyond. It aims to alert students 
+		towards the geo-political realities inherent in 
+		Singapore, as well as nurture in them the spirit 
+		of friendship and partnership among different countries 
+		and different people.
+		</p>
+		</div>	
+
+		<div class="container">
+		<p style="font-family:Intro; padding: 63px 70px 40px; font-size: 24px; font-weight: 500; line-height: 20px;">
+		Our Students in
+		<br>their Ethnic Wear
+		</p>
+		</div>
+
+		<div class="container">
+			<!-- Slider Start Here -->
+				<div id="slideshow10" class="slideshow-container">
+					<!-- <img class="sliderBG" src="img/CNY/sliderBG.png" alt="" style="position: absolute; left: 0; z-index: -1; top: -15px;"> -->
+					<img class="sliderBG" alt="" style="position: absolute; left: 0; z-index: -1; top: -15px;">
+					<div class="mySlides fade">
+					<img src="img/IFD/IFDimage3.png" style="width:346px; height: 320px;">
+					</div>
+			
+					<div class="mySlides fade">
+					<img src="img/IFD/IFDimage4.png" style="width: 346px; height: 320px;">
+					</div>
+			
+					<div class="mySlides fade">
+					<img src="img/IFD/IFDimage5.png" style="width: 346px; height:  320px;">
+					</div>
+			
+					<div class="mySlides fade">
+					<img src="img/IFD/IFDimage6.png" style="width: 346px; height: 320px;">
+					</div>
+			
+			
+					<a class="prev" onclick="plusSlides(-1,slideshow10)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1, slideshow10)">&#10095;</a>
+			
+			
+					<div style="text-align:center">
+						<span class="dot" onclick="currentSlide(1, slideshow10)"></span> 
+						<span class="dot" onclick="currentSlide(2, slideshow10)"></span> 
+						<span class="dot" onclick="currentSlide(3, slideshow10)"></span>
+						<span class="dot" onclick="currentSlide(4, slideshow10)"></span>   
+					</div>
+				</div>
+					<br>
+			<!-- Slider End Here -->				
+		</div>
+
+		<div class="container">
+		<p style="font-family:Intro; font-size: 24px; font-weight: 500; line-height: 20px; margin: 60px 0;">
+		Our student and <br>teacher in the different
+		<br>ethnic wear
+		<img src="img/IFD/IFDimage2.png" alt="" style="margin-top: 66px;">
+		</p>
+		</div>
+
+		<div style="height: 200px;">
+		<img class="bottom_image" style="padding-top: 30px;" src="img/Start_it_right/bottom_kids.png" alt="">
+
+		<!-- slideshow Javascript start here -->
+		<script>
+			var slideshow10 = document.getElementById("slideshow10");
+			slideshow10.currentSlideIndex = 1;
+			showSlides(slideshow10.currentSlideIndex, slideshow10);
+	
+	
+			function plusSlides(n, slideshow) {
+			showSlides(slideshow.currentSlideIndex += n, slideshow);
+			}
+	
+			function currentSlide(n, slideshow) {
+			showSlides(slideshow.currentSlideIndex = n, slideshow);
+			}
+	
+			function showSlides(n, slideshow) {
+	
+	
+	
+			var i;
+			var slides = slideshow.getElementsByClassName("mySlides");
+			var dots = slideshow.getElementsByClassName("dot");
+			if (n > slides.length) {slideshow.currentSlideIndex = 1}    
+			if (n < 1) {slideshow.currentSlideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+			}
+			for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideshow.currentSlideIndex-1].style.display = "block";  
+			dots[slideshow.currentSlideIndex-1].className += " active";
+			}
+		</script>
+		<!-- Slideshow Javascript end here -->
+	</div>
+</div>	
+</body></html>
