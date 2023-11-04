@@ -137,7 +137,7 @@
 					<a class="next2" onclick="plusSlides(1, slideshow1)">&#9654;</a>
 				
 					<div style="text-align:center; margin-top: 35px;">
-					  <span class="dot2" onclick="currentSlide(1, slideshow1)"></span> 
+					  <span class="dot2 current" onclick="currentSlide(1, slideshow1)"></span> 
 					  <span class="dot2" onclick="currentSlide(2, slideshow1)"></span> 
 					  <span class="dot2" onclick="currentSlide(3, slideshow1)"></span> 
 					  <span class="dot2" onclick="currentSlide(4, slideshow1)"></span> 
@@ -171,21 +171,29 @@
 					function currentSlide(n, slideshow) {
 						showSlides(slideshow.currentSlideIndex = n, slideshow);
 					}
-				
+					
 					function showSlides(n, slideshow) {
 						var i;
 						var slides = slideshow.getElementsByClassName("mySlides");
 						var dots = slideshow.getElementsByClassName("dot2");
-						if (n > slides.length) {slideshow.currentSlideIndex = 1}    
+						var currentGroup = Math.ceil(n / 5);
+						for (i = 0; i < dots.length; i++) {
+							if (i >= (currentGroup - 1) * 5 && i < currentGroup * 5) {
+								dots[i].style.display = "inline-block"; // Show the dots in the current group
+							} else {
+								dots[i].style.display = "none"; // Hide other dots
+							}
+						}
+						if (n > slides.length) {slideshow.currentSlideIndex = 1}
 						if (n < 1) {slideshow.currentSlideIndex = slides.length}
 						for (i = 0; i < slides.length; i++) {
-						slides[i].style.display = "none";  
+							slides[i].style.display = "none";
 						}
 						for (i = 0; i < dots.length; i++) {
-						dots[i].className = dots[i].className.replace(" active", "");
+							dots[i].className = dots[i].className.replace(" current", "");
 						}
-						slides[slideshow.currentSlideIndex-1].style.display = "block";  
-						dots[slideshow.currentSlideIndex-1].className += " active";
+						slides[slideshow.currentSlideIndex-1].style.display = "block";
+						dots[slideshow.currentSlideIndex-1].className += " current";
 					}
 				</script>			
 				
